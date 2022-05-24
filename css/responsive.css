@@ -371,7 +371,9 @@
     margin-right: 0;
   }
 
-  /*Map responsive */
+ 
+}
+ /*Map responsive */
   .map-responsive{
 
     overflow:hidden;
@@ -395,5 +397,4 @@
 
     position:absolute;
 
-}
 }
