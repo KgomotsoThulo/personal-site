@@ -191,7 +191,7 @@ $(window).load(function(){
 
 
 document.addEventListener("DOMContentLoaded", function() {
-  const pdfUrl = "assets/documents/Kgomotso Thulo Resume.pdf"; // Replace "your_resume.pdf" with the actual filename and extension of your PDF
+  const pdfUrl = "assets/documents/Kgomotso_Thulo_Resume.pdf"; // Replace "your_resume.pdf" with the actual filename and extension of your PDF
 
   const viewResumeButton = document.getElementById("viewResumeButton");
   const pdfViewerContainer = document.getElementById("pdfViewerContainer");
