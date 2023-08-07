@@ -198,7 +198,7 @@ nav ul li a {
   position: relative;
   display: block;
   font-size: 14px;
-  color: #999999;
+  color: #0e0d0d;
   font-family: 'Poppins', helvetica;
   font-weight: 500;
   line-height: 16px;
@@ -233,6 +233,7 @@ nav ul li a {
   background: url("../images/mywebsite gif wallpaper.gif") repeat scroll center center / cover;
   height: 100vh;
   width: 100%;
+  padding-bottom: 100px;
 }
 
 
@@ -281,20 +282,23 @@ nav ul li a {
   width: 100%;
   height: auto;
   background: #f7f7f7;
-  padding-top: 190px;
+  padding-top: 400px;
 }
 
 #about .div-img-bg {
-  padding-bottom: 30px;
+  padding-bottom: 10px;
+  padding-top: 60px;
+  margin-top: 50px;
   border: 20px solid #b8a07e;
 }
 
 #about .div-img-bg .about-img img {
   width: 100%;
+  padding-top: 0px;
   box-shadow: 0px 0px 85px 0px rgba(0, 0, 0, 0.14);
-  margin-top: -60px;
+  margin-top: 60px;
   margin-left: 40px;
-  height: 400px;
+  height: 300px;
   object-fit: cover;
 }
 
@@ -446,6 +450,8 @@ nav ul li a {
 #contact {
   height: auto;
   width: 100%;
+  justify-content: center;
+  padding-left: 400px;
 }
 
 .contact-details {
@@ -562,4 +568,44 @@ nav ul li a {
 
 .resume-button {
   padding-bottom: 50px;
+}
+
+
+/* extra css  */
+#about,
+#skills,
+#services,
+#portfolio,
+#contact {
+  padding-top: 5px; /* Adjust the value as needed */
+}
+
+
+#home {
+  padding-bottom: 100px;
+}
+
+
+#skills {
+  padding-top: 50px; 
+
+}
+
+#portfolio {
+  padding-top: 50px;
+}
+
+
+#skills .col-md-6 {
+  text-align: center;
+}
+
+#skills ul {
+  padding-left: 100px;
+  text-align: left;
+  list-style-position: inside; /* This will align the bullet points with the text */
+}
+
+.text-color-dark {
+  color: #0e0d0d;
 }

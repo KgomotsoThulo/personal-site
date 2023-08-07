@@ -27,13 +27,21 @@ $(document).ready(function() {
         menu = target;
 
     target = $(target);
-    $('html, body').stop().animate({
-      'scrollTop': target.offset().top - 80
-    }, 500, 'swing', function() {
-      window.location.hash = target.selector;
-      $(document).on("scroll", onScroll);
-    });
+  //   $('html, body').stop().animate({
+  //     'scrollTop': target.offset().top - 80
+  //   }, 500, 'swing', function() {
+  //     window.location.hash = target.selector;
+  //     $(document).on("scroll", onScroll);
+  //   });
+  // });
+
+  $('html, body').stop().animate({
+    'scrollTop': target.offset().top - 80
+  }, 500, 'swing', function() {
+    window.location.hash = target.selector;
+    $(document).on("scroll", onScroll);
   });
+});
 
 
   function onScroll(event) {
@@ -51,17 +59,22 @@ $(document).ready(function() {
   // ========================================================================= //
 
 
-  $(window).scroll(function() {
-    var scroll = $(window).scrollTop();
-    if (scroll > 200 ) {
-      $("#main-nav, #main-nav-subpage").slideDown(700);
-      $("#main-nav-subpage").removeClass('subpage-nav');
-    } else {
-      $("#main-nav").slideUp(700);
-      $("#main-nav-subpage").hide();
-      $("#main-nav-subpage").addClass('subpage-nav');
-    }
-  });
+  // $(window).scroll(function() {
+  //   $("#main-nav, #main-nav-subpage").slideDown(0);
+  //   $("#main-nav-subpage").removeClass('subpage-nav');
+  //   // var scroll = $(window).scrollTop();
+  //   // if (scroll >= 0 ) {
+  //   //   $("#main-nav, #main-nav-subpage").slideDown(700);
+  //   //   $("#main-nav-subpage").removeClass('subpage-nav');
+  //   // } else {
+  //   //   $("#main-nav").slideUp(700);
+  //   //   $("#main-nav-subpage").hide();
+  //   //   $("#main-nav-subpage").addClass('subpage-nav');
+  //   // }
+  // });
+  $("#main-nav, #main-nav-subpage").slideDown(0);
+  $("#main-nav-subpage").removeClass('subpage-nav');
+
 
   // ========================================================================= //
   //  // RESPONSIVE MENU
@@ -77,13 +90,13 @@ $(document).ready(function() {
 
   var typed = $(".typed");
 
-  $(function() {
-    typed.typed({
-      strings: ["Kgomotso Thulo.", "A Programmer.", "A Full Stack Developer.", "A Freelancer."],
-      typeSpeed: 100,
-      loop: true,
-    });
-  });
+  // $(function() {
+  //   typed.typed({
+  //     strings: ["Kgomotso Thulo.", "A Programmer.", "A Full Stack Developer.", "A Freelancer."],
+  //     typeSpeed: 100,
+  //     loop: true,
+  //   });
+  // });
 
 
   // ========================================================================= //
@@ -155,3 +168,24 @@ $(window).load(function(){
   });
 
 })
+
+
+
+// JavaScript code to handle the "View Resume" button
+document.addEventListener("DOMContentLoaded", function() {
+  const pdfUrl = "assets/documents/Kgomotso Thulo Resume.pdf"; // Replace "your_resume.pdf" with the actual filename and extension of your PDF
+
+  const viewResumeButton = document.getElementById("viewResumeButton");
+  const pdfViewerContainer = document.getElementById("pdfViewerContainer");
+  const pdfViewer = document.getElementById("pdfViewer");
+
+  viewResumeButton.addEventListener("click", function() {
+    // Set the source of the iframe to the PDF URL
+    pdfViewer.src = pdfUrl;
+
+    // Show the PDF viewer container and hide the button
+    pdfViewerContainer.style.display = "block";
+    viewResumeButton.style.display = "none";
+  });
+});
+
