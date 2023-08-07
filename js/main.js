@@ -171,21 +171,42 @@ $(window).load(function(){
 
 
 
-// JavaScript code to handle the "View Resume" button
+// // JavaScript code to handle the "View Resume" button
+// document.addEventListener("DOMContentLoaded", function() {
+//   const pdfUrl = "assets/documents/Kgomotso Thulo Resume.pdf"; // Replace "your_resume.pdf" with the actual filename and extension of your PDF
+
+//   const viewResumeButton = document.getElementById("viewResumeButton");
+//   const pdfViewerContainer = document.getElementById("pdfViewerContainer");
+//   const pdfViewer = document.getElementById("pdfViewer");
+
+//   viewResumeButton.addEventListener("click", function() {
+//     // Set the source of the iframe to the PDF URL
+//     pdfViewer.src = pdfUrl;
+
+//     // Show the PDF viewer container and hide the button
+//     pdfViewerContainer.style.display = "block";
+//     viewResumeButton.style.display = "none";
+//   });
+// });
+
+
 document.addEventListener("DOMContentLoaded", function() {
   const pdfUrl = "assets/documents/Kgomotso Thulo Resume.pdf"; // Replace "your_resume.pdf" with the actual filename and extension of your PDF
 
   const viewResumeButton = document.getElementById("viewResumeButton");
   const pdfViewerContainer = document.getElementById("pdfViewerContainer");
+  const pdfViewerObject = document.getElementById("pdfViewerObject");
   const pdfViewer = document.getElementById("pdfViewer");
 
   viewResumeButton.addEventListener("click", function() {
-    // Set the source of the iframe to the PDF URL
+    // Set the source of the iframe or object to the PDF URL
     pdfViewer.src = pdfUrl;
+    pdfViewerObject.setAttribute("data", pdfUrl);
 
     // Show the PDF viewer container and hide the button
     pdfViewerContainer.style.display = "block";
     viewResumeButton.style.display = "none";
   });
 });
+
 
