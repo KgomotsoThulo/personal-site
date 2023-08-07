@@ -115,21 +115,44 @@
     
 
 
-    <div class="text-center resume-button">
+    <!-- <div class="text-center resume-button">
        <section id="resume">
       <div class="resume-content ">
-        <!-- Other content related to your resume section -->
+      
         <h2>Resume</h2>
-        <!-- Add the "View Resume" button -->
+     
         <button class="btn btn-primary" id="viewResumeButton">View Resume</button>
-        <!-- Add the iframe container -->
+       
         <div id="pdfViewerContainer" style="display: none;">
           <iframe id="pdfViewer" width="600" height="800" frameborder="0"></iframe>
         </div>
-        <!-- Other content related to your resume section -->
+
       </div>
-    </section>   
+       </section>   
+    </div> -->
+    
+    <div class="text-center resume-button">
+      <section id="resume">
+        <div class="resume-content">
+          <!-- Other content related to your resume section -->
+          <!-- Add the "View Resume" button for desktop -->
+          <button class="btn btn-primary" id="viewResumeButton">View Resume</button>
+          <!-- Add the PDF viewer container -->
+          <div id="pdfViewerContainer" style="display: none;">
+            <!-- For desktop: Display PDF using <object> -->
+            <object data="assets/documents/Kgomotso Thulo Resume.pdf" type="application/pdf" width="600" height="800">
+              <p>Your browser does not support PDFs. Please download the PDF to view it: <a href="assets/documents/Kgomotso Thulo Resume.pdf" target="_blank">Download PDF</a>.</p>
+            </object>
+            <!-- For mobile: Display PDF using <iframe> -->
+            <iframe id="pdfViewer" src="assets/documents/Kgomotso Thulo Resume.pdf" width="100%" height="800" frameborder="0" style="display: none;"></iframe>
+          </div>
+          <!-- Other content related to your resume section -->
+        </div>
+      </section>   
     </div>
+    
+
+
     <div class="row text-center">
       <div class="col-lg-6 text-center text-color-dark">
         <h3>Technical Skills</h3>
