@@ -453,14 +453,49 @@ nav ul li a {
   justify-content: center;
 }
 
+#contact .container.contact-container {
+  text-align: center; /* Center contact content */
+  text-align: center; /* Center contact content */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact.paddsection {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  /* min-height: 100vh;Adjust this value as needed */
+}
+
+.contact-container {
+  max-width: 800px; /* Adjust this value as needed */
+}
+
+.contact-block1 {
+  text-align: center;
+}
+
 .contact-details {
-  list-style: none;
+  /* list-style: none;
   margin: 0;
+  padding: 0; */
+  /* list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center; */
+  list-style: none;
   padding: 0;
 }
 
+.contact-details span {
+  font-size: 14px;
+}
+
 .contact-details li {
-  padding-bottom: 10px;
+  /* padding-bottom: 10px; */
+  /* display: inline-block; */
+  margin: 0 10px;
 }
 
 #contact input, #contact textarea {
@@ -566,7 +601,9 @@ nav ul li a {
 /*-----------------------------------------------------------------------------------*/
 
 .resume-button {
-  padding-bottom: 50px;
+  text-align: center;
+  padding-top: 20px; /* Adjust the spacing as needed */
+  padding-bottom: 20px; /* Adjust the spacing as needed */
 }
 
 
