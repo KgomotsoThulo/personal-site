@@ -688,3 +688,21 @@ nav ul li a {
     font-size: 18px;
   }
 }
+
+
+
+.center-on-mobile {
+  /* text-align: center; */
+  margin-top: -20px; /* Adjust this value as needed */
+  padding-top: 30px; /* Add this line to create space between animation and paragraph */
+}
+
+/* Add a media query for smaller screens */
+@media (max-width: 768px) {
+  .center-on-mobile {
+    margin-top: -30px; /* Adjust this value for smaller screens */
+    padding-top: 160px; /* Adjust this value for smaller screens */
+  }
+}
+
+
