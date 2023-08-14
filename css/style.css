@@ -645,3 +645,26 @@ nav ul li a {
 .text-color-dark {
   color: #0e0d0d;
 }
+
+
+
+@media (max-width: 767px) {
+  #about .about-descr .p-heading {
+    white-space: nowrap;
+  }
+}
+
+
+@media (max-width: 767px) {
+  #about .about-descr {
+    text-align: center;
+  }
+}
+
+
+@media (max-width: 767px) {
+  #skills ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+}
