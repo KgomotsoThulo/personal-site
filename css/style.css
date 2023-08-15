@@ -698,7 +698,7 @@ nav ul li a {
 }
 
 /* Add a media query for smaller screens */
-@media (max-width: 768px) {
+@media (max-width: 1200px){
   .center-on-mobile {
     margin-top: -30px; /* Adjust this value for smaller screens */
     padding-top: 410px; /* Adjust this value for smaller screens */
