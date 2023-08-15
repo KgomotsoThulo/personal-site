@@ -701,7 +701,7 @@ nav ul li a {
 @media (max-width: 768px) {
   .center-on-mobile {
     margin-top: -30px; /* Adjust this value for smaller screens */
-    padding-top: 310px; /* Adjust this value for smaller screens */
+    padding-top: 410px; /* Adjust this value for smaller screens */
   }
 }
 
