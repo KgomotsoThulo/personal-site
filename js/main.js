@@ -90,13 +90,13 @@ $(document).ready(function() {
 
   var typed = $(".typed");
 
-  // $(function() {
-  //   typed.typed({
-  //     strings: ["Kgomotso Thulo.", "A Programmer.", "A Full Stack Developer.", "A Freelancer."],
-  //     typeSpeed: 100,
-  //     loop: true,
-  //   });
-  // });
+  $(function() {
+    typed.typed({
+      strings: ["Kgomotso Thulo.", "A Developer.", "A Solutions Specialist.", "A Freelancer."],
+      typeSpeed: 100,
+      loop: true,
+    });
+  });
 
 
   // ========================================================================= //
